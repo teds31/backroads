@@ -1,7 +1,7 @@
 import React from "react"
 
-const SimpleHero = () => {
-  return <div></div>
+const SimpleHero = ({ children }) => {
+  return <header className="defaultHero">{children}</header>
 }
 
 export default SimpleHero
