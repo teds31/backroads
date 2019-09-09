@@ -5,9 +5,25 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: "BackRoads",
+    description:
+      "Explore awesome worldwide tours & discover what makes each of them unique. Forget your daily routine & say yes to adventure!",
+    author: "Teddy Stanowski",
+    data: { job: "front-end developer", age: 33 },
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-styled-components`,
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
   ],
 }
