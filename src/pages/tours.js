@@ -14,6 +14,7 @@ export default class tours extends Component {
     )
   }
 }
+
 export const query = graphql`
   query {
     defaultBcg: file(relativePath: { eq: "defaultBcg.jpeg" }) {
