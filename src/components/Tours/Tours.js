@@ -3,7 +3,6 @@ import TourList from "./TourList"
 import { useStaticQuery, graphql } from "gatsby"
 
 const getTours = graphql`
-  # Write your query or mutation here
   query {
     tours: allContentfulTourExample {
       edges {
